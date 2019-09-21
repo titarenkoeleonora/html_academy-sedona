@@ -8,13 +8,13 @@
     <header>
       <nav>
         <ul>
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта</a></li>
+          <li><a href="info.html" >Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
-      <a>
+      <a href="#">
         <img src="logo_sedona.svg" alt="Логотип Cедона">
       </a>
     </header>
@@ -88,7 +88,26 @@
           Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <!--Форма поиска гостиниц-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <h3>Поиск гостиницы в Седоне</h2>
+          <p>
+            <label for="arrival-date">Дата заезда</label>
+            <input type="date" id="arrival-date">
+          </p>
+          <p>
+            <label for="date-of-depature">Дата выезда</label>
+            <input type="date" id="date-of-depature">
+          </p>
+          <p>
+            <label for="adults">Взрослые</label>
+            <input type="number" id="adults">
+          </p>
+          <p>
+            <label for="children">Дети</label>
+            <input type="number" id="children">
+          </p>
+          <button type="submit">Найти</button>
+        </form>
       </section>
       <section>
           <img src="map.png" alt="Карта штата">

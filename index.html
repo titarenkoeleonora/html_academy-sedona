@@ -14,14 +14,14 @@
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
-      <a href="#">
-        <img src="logo_sedona.svg" alt="Логотип Cедона">
+      <a>
+        <img src="img/logo_sedona.svg" alt="Логотип Cедона">
       </a>
     </header>
     <main>
         <h1> 
           <span class="visually-hidden">Город Седона</span> 
-          <img src="welcome.png" alt="Добро пожаловать">
+          <img src="img/welcome.png" alt="Добро пожаловать">
         </h1>
       <section>
         <h2 class="visually-hidden">Преимущества</h2>
@@ -88,8 +88,8 @@
           Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
+          <a>Поиск гостиницы в Седоне</a>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <h3>Поиск гостиницы в Седоне</h2>
           <p>
             <label for="arrival-date">Дата заезда</label>
             <input type="date" id="arrival-date">
@@ -100,47 +100,47 @@
           </p>
           <p>
             <label for="adults">Взрослые</label>
+            <button>-</button>
             <input type="number" id="adults">
+            <button>+</button>
           </p>
           <p>
             <label for="children">Дети</label>
+            <button type="button">-</button>
             <input type="number" id="children">
+            <button type="button">+</button>
           </p>
           <button type="submit">Найти</button>
         </form>
       </section>
-      <section>
-          <img src="map.png" alt="Карта штата">
-      </section>
+        <div class="map"></div>
     </main>
     <footer>
       <div>
         <p> &#35;visitSEDONA</p>
       </div>
       <div>
-        <!-- Перенести картинки в стили (не являются контентом)
         <ul>
           <li>
-            <a href="https://vk.com">
-              <img src="logo_vk.png" alt="Лого ВК">
+            <a href="https://twiiter.com" aria-label="Седона в Твиттере">
+              <img src="img/twitter.svg">
             </a>
           </li>
           <li>
-              <a href="https://facebook.com">
-                <img src="logo_facebook.png" alt="Лого Facebook">
+              <a href="https://facebook.com" aria-label="Седона в Фейсбуке">
+                <img src="img/fb-icon.svg">
               </a>
             </li>
             <li>
-                <a href="https://youtube.com">
-                  <img src="logo_youtube.png" alt="Лого Youtube">
+                <a href="https://youtube.com" aria-label="Седона на Ютубе">
+                  <img src="img/youtube.svg">
                 </a>
               </li>
         </ul>
-        -->
       </div>
       <div>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="logo_academy.png" alt="Лого HTML Academy">
+          <img src="img/logo_academy.png" alt="Лого HTML Academy">
         </a>
       </div>
     </footer>

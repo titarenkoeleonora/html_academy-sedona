@@ -197,6 +197,8 @@ input[type="number"] {
 }
 
 .icon {
+    width: 46px;
+    height: 48px;
     background-color: #81b3d2;
     list-style: none;
 }

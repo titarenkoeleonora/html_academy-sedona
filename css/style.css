@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     padding: 0;
 
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -10,6 +10,10 @@ body {
     text-transform: uppercase;
 
     background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Скрытые заголовки */
@@ -22,9 +26,6 @@ body {
     margin: -1px;
 }
 
-a {
-    text-decoration: none;
-}
 
 /* Навигация */
 
@@ -53,15 +54,33 @@ a {
 
 /* Картинка-приветствие */
 
+
 .logo-background {
-    background-image: 
-        url("../img/polygon.svg"),
-        url("../img/background_photo.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
+    box-sizing: content-box;
+    position: relative;
     width: 1200px;
-    height: 800px;
+    height: 510px;
+    background-image: url("../img/background_photo.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    overflow: hidden;
 }
+
+/* .logo-background img {
+    padding-left: 370px;
+    padding-top: 77px;
+} */
+
+.logo-background::after {
+    content: "";
+    width: 1200px;
+    height: 59px;
+    background-image: url("../img/polygon.svg");
+    background-repeat: no-repeat;
+    margin-top: 96px;
+    display: block;
+}
+
 
 /* Списки с преимуществами и рекомендациями */
 
@@ -89,29 +108,48 @@ a {
     background-color: #eeeeee;
 }
 
-.recommendations-icon--1 {
-    margin: 0 auto;
+.recommendations-title {
+    position: relative;
+    width: 100px;
+    height: 115px;
+    line-height: 115px;
+    margin: 0 auto;    
+    margin-top: 60px;
+    padding-bottom: 30px;
+}
+  
+  .recommendations-title--house::before {
+    content: "";
+    /* position: absolute; */
     width: 75px;
     height: 72px;
     background-image: url("../img/icon-1.png");
-    background-position: center;
-}
-
-.recommendations-icon--2 {
+    background-repeat: no-repeat;
     margin: 0 auto;
+    display: block;
+  }
+
+  .recommendations-title--food::before {
+    content: "";
+    /* position: absolute; */
     width: 74px;
     height: 70px;
     background-image: url("../img/icon-2.png");
-    background-position: center;
-}
-
-.recommendations-icon--3 {
+    background-repeat: no-repeat;
     margin: 0 auto;
+    display: block;
+  }
+
+  .recommendations-title--souvenirs::before {
+    content: "";
+    /* position: absolute; */
     width: 64px;
     height: 76px;
     background-image: url("../img/icon-3.png");
-    background-position: center;
-}
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: block;
+  }
 
 /* Форма поиска гостиниц */
 
@@ -150,8 +188,19 @@ input[type="number"] {
 .modal-button {
     width: 38px;
     height: 38px;
-    /* background-image: url("../img/minus.svg") no-repeat; не получается вставить картинки +-*/
-    background-color #f2f2f2;
+    background-color: #f2f2f2;
+}
+
+.modal-button--minus {
+    background-image: url("../img/minus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-button--plus {
+    background-image: url("../img/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Кнопки */
@@ -210,6 +259,18 @@ input[type="number"] {
 
 .icon:active {
     background-color: #5496bd;
+}
+
+.icon:first-of-type img {
+    padding: 17px 14px 16px 15px;
+}
+
+.icon:nth-of-type(2) img {
+    padding: 13px 17px 13px 17px;
+}
+
+.icon:last-of-type img {
+    padding: 16px 13px 16px 13px;
 }
 
 /* hotels.html */

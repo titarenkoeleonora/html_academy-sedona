@@ -66,18 +66,21 @@ a {
     overflow: hidden;
 }
 
-/* .logo-background img {
-    padding-left: 370px;
-    padding-top: 77px;
-} */
+.logo-background img {
+    margin: 0 auto;
+    margin-top: 75px;
+    display: block;
+}
 
 .logo-background::after {
     content: "";
+    position: absolute;
     width: 1200px;
     height: 59px;
-    background-image: url("../img/polygon.svg");
+    background-image: url("../img/polygon.png");
     background-repeat: no-repeat;
     margin-top: 96px;
+    bottom: -2px;
     display: block;
 }
 
@@ -99,7 +102,7 @@ a {
     list-style: none;
 }
 
-.advantages-item--background {
+.blue-background {
     background-color: #81b3d2;
     color: #ffffff;
 } 
@@ -117,38 +120,30 @@ a {
     margin-top: 60px;
     padding-bottom: 30px;
 }
-  
-  .recommendations-title--house::before {
+
+.recommendations-title:before {
     content: "";
-    /* position: absolute; */
-    width: 75px;
-    height: 72px;
-    background-image: url("../img/icon-1.png");
     background-repeat: no-repeat;
     margin: 0 auto;
     display: block;
+}
+  
+  .recommendations-title--house::before {
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/icon-1.png"); 
   }
 
   .recommendations-title--food::before {
-    content: "";
-    /* position: absolute; */
     width: 74px;
     height: 70px;
     background-image: url("../img/icon-2.png");
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    display: block;
   }
 
   .recommendations-title--souvenirs::before {
-    content: "";
-    /* position: absolute; */
     width: 64px;
     height: 76px;
     background-image: url("../img/icon-3.png");
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    display: block;
   }
 
 /* Форма поиска гостиниц */

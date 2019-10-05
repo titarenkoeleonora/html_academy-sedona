@@ -127,25 +127,30 @@ a {
 .recommendations-title {
     position: relative;
     width: 100px;
-    height: 115px;
-    line-height: 115px;
+    /* height: 115px;
+    line-height: 115px; */
     margin: 0 auto;    
     margin-top: 60px;
     padding-bottom: 30px;
     display: block;
+    padding-top: 105px;
 }
 
 .recommendations-title:before {
     content: "";
     background-repeat: no-repeat;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    top: 0;
     display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
   
   .recommendations-title--house::before {
     width: 75px;
     height: 72px;
-    background-image: url("../img/icon-1.png"); 
+    background-image: url("../img/icon-1.png");
   }
 
   .recommendations-title--food::before {
@@ -394,11 +399,15 @@ a {
     flex-direction: column;
 }
 
+
 .advantages-item__text {
     width: 400px;
 }
 
 .reccomendations-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 400px;
     padding-top: 60px;
 }

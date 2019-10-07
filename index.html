@@ -33,55 +33,55 @@
         <b class="title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item__wrapper">
             <div class="advantages-item__text blue-background">
               <h3 class="title">Настоящий городок</h3>
               <span> &mdash;&#8470;1&mdash; </span>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img src="img/photo_1.jpg"  width="800" height="260" alt="Седона">
+            <img src="img/photo_1.jpg"  width="800" height="255" alt="Седона">
           </li>
           <li>
             <ul class="recommendations">
               <li class="recommendations-item">
                 <b class="title recommendations-title recommendations-title--house">Жильё</b>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="recommendations-item__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="recommendations-item">
                 <b class="title recommendations-title recommendations-title--food">Еда</b>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="recommendations-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="recommendations-item">
                 <b class="title recommendations-title recommendations-title--souvenirs">Сувениры</b>
-                <p>Не только китайского, но и местного производства!</p>
+                <p class="recommendations-item__text">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
-          <li class="advantages-item">
-            <img src="img/devil-bridge.jpg" width="800" height="260" alt="Мост Дьявола">
+          <li class="advantages-item advantages-item__wrapper">
+            <img src="img/devil-bridge.jpg" width="800" height="255" alt="Мост Дьявола">
               <div class="advantages-item__text blue-background">
                 <h3 class="title">Там есть Мост дьявола</h3>
                 <span> &mdash;&#8470;2&mdash; </span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
           </li>
-          <div class="grey-background">
-            <li class="advantages-item">
-              <div class="advantages-item__text">
-                  <h3 class="title">Небольшая площадь</h3> 
-                  <span> &mdash;&#8470;3&mdash; </span>            
-                  <p>Все достопримечательности находятся очень близко</p>
-              </div>
+          <div class="grey">
+          <li class="advantages-item">
+            <div class="advantages-item__text grey-background">
+              <h3 class="title">Небольшая площадь</h3> 
+                <span> &mdash;&#8470;3&mdash; </span>            
+                <p>Все достопримечательности находятся очень близко</p>
+            </div>
           </li>
           <li class="advantages-item">
-              <div class="advantages-item__text">
+              <div class="advantages-item__text grey-background">
                   <h3 class="title">Красивая дорога</h3> 
                   <span> &mdash;&#8470;4&mdash; </span> 
                   <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
           </li>
           <li class="advantages-item">
-            <div class="advantages-item__text">
+            <div class="advantages-item__text grey-background">
               <h3 class="title">Мало туристов</h3>
               <span> &mdash;&#8470;5&mdash; </span>
               <p>Большинство едет в гранд каньон и толпится там</p>
@@ -90,13 +90,15 @@
         </div>
         </ul>
       </section>
-      <section class="modal">
         <h2 class="visually-hidden">Поиск гостиниц</h2>
+        <div class="modal-title">
         <b class="modal-subtitle">Заинтересовались?</b>
         <p>
           Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
+      </div>
+      <div class="modal">
           <a class="brown-button">Поиск гостиницы в Седоне</a>
         <form action="https://echo.htmlacademy.ru" method="post" class="modal-form">
           <p>
@@ -107,31 +109,34 @@
             <label for="date-of-depature">Дата выезда</label>
             <input type="date" id="date-of-depature"  class="modal-item">
           </p>
-          <p>
+          <div class="modal-buttons-number">
+          <div class="button-adults">
             <label for="adults">Взрослые</label>
             <button class="modal-button modal-button--minus"></button>
-            <input type="number" id="adults"  class="modal-item">
+            <input type="number" id="adults"  class="modal-item modal-item__adults">
             <button class="modal-button modal-button--plus"></button>
-          </p>
-          <p>
+          </div>
+          <div class="button-children">
             <label for="children">Дети</label>
             <button type="button"  class="modal-button modal-button--minus"></button>
-            <input type="number" id="children"  class="modal-item">
+            <input type="number" id="children"  class="modal-item modal-item__children">
             <button type="button"  class="modal-button  modal-button--plus"></button>
-          </p>
+          </div>
+        </div>
           <button type="submit" class="blue-button">Найти</button>
         </form>
+      </div>
       </section>
         <div class="map">
           <img src="img/map.jpg" alt="Карта Седоны" width="1200px" height="594px">
         </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="hashtag">
         <p> &#35;visitSEDONA</p>
       </div>
       <div>
-        <ul>
+        <ul class="footer-social">
           <li class="icon">
             <a href="https://twiiter.com" aria-label="Седона в Твиттере">
               <img src="img/twitter.svg">
@@ -149,7 +154,7 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="footer-copyright">
         <img src="img/website_by.png" alt="website by">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo_academy.png" alt="Лого HTML Academy" class="logo_academy">

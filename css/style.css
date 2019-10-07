@@ -50,7 +50,6 @@ a {
 
 .site-navigation li {
     width: 239px;
-    height: 56px;
 }
 
 .site-navigation a:hover,
@@ -81,7 +80,6 @@ a {
 .logo-background img {
     margin: 0 auto;
     margin-top: 75px;
-    /* display: block; */
 }
 
 .logo-background::after {
@@ -114,6 +112,15 @@ a {
     list-style: none;
 }
 
+.advantages-item__text {
+    width: 280px;
+    vertical-align: middle;
+    padding-right: 60px;
+    padding-left: 60px;
+
+    min-height: 255px;
+}
+
 .blue-background {
     background-color: #81b3d2;
     color: #ffffff;
@@ -123,23 +130,23 @@ a {
     background-color: #eeeeee;
 }
 
-
+.advantages-item .title {
+    padding-top: 40px;
+    margin: 0;
+}
 .recommendations-title {
     position: relative;
     width: 100px;
-    /* height: 115px;
-    line-height: 115px; */
+    display: block;
+    padding-top: 105px;
     margin: 0 auto;    
     margin-top: 60px;
     padding-bottom: 30px;
-    display: block;
-    padding-top: 105px;
 }
 
 .recommendations-title:before {
     content: "";
     background-repeat: no-repeat;
-    /* margin: 0 auto; */
     top: 0;
     display: block;
     position: absolute;
@@ -165,10 +172,17 @@ a {
     background-image: url("../img/icon-3.png");
   }
 
+  .recommendations-item__text {
+      width: 284px;
+      margin: 0;
+      padding: 0;
+  }
+
 /* Форма поиска гостиниц */
 
 .modal {
-
+    background-color: #ffffff;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .modal a {
@@ -187,6 +201,7 @@ a {
 
 .modal-item {
     background-color: #f2f2f2;
+    margin-bottom: 30px;
 }
 
 .modal input[type="date"] {
@@ -217,6 +232,14 @@ a {
     background-position: center;
 }
 
+.modal .blue-button {
+    width: 458px;
+    margin-bottom: 60px;
+
+    min-height: 58px;
+}
+
+
 /* Кнопки */
 
 .brown-button {
@@ -233,6 +256,13 @@ a {
 
 .brown-button:active {
     background-color: #503e33;
+}
+
+.modal .brown-button {
+    padding-top: 35px;
+    padding-right: 139px;
+    padding-bottom: 33px;
+    padding-left: 139px;
 }
 
 .blue-button {
@@ -293,19 +323,33 @@ a {
 
 }
 
+.hotels-filter {
+    width: 100%;
+    min-height: 216px;
+}
+
 /* Список гостиниц */
 
 .hotels-list__items {
     list-style: none;
+    border-top: 1px solid #f2f2f2;
 }
 
 .hotels-list__name {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 17px;
 }
 
-.hotel-rating {
+.hotels-list__items--info {
+    width: 260px;
+    margin-left: 30px;
+}
+
+.hotel-rating__number {
     width: 110px;
     height: 27px;
     background-color: #f2f2f2;
@@ -313,7 +357,7 @@ a {
 
 .hotel-rating__4 {
     width: 70px;
-    height: 18px;
+    height: 17px;
     background: url("../img/stars.svg") 18px 17px;
 }
 
@@ -327,6 +371,15 @@ a {
     width: 35px;
     height: 18px;
     background: url("../img/stars.svg") 18px 17px;
+}
+
+.hotels-list__items--info span {
+    padding-right: 40px;
+}
+
+.hotels-list__items--info .blue-button {
+    width: 110px;
+    min-height: 27px;
 }
 
 /* Сеточные стили */
@@ -348,7 +401,7 @@ a {
     padding: 0;
     position: absolute;
     margin-left: 530px;
- 
+    z-index: 1;
 }
 
 .site-navigation {
@@ -359,7 +412,6 @@ a {
     align-items: center;
     align-content: center;
     margin: 0;
-    padding: 0;
 
     
     /* Временно для сетки */
@@ -368,10 +420,15 @@ a {
 
 .site-navigation li:nth-child(2) {
     margin-right:auto;
+    
 }
 
 .site-navigation li:nth-of-type(3) {
     margin-left:auto;
+}
+
+.site-navigation li:first-child {
+    margin-left: 71px;
 }
 
 .logo-background {
@@ -380,38 +437,134 @@ a {
     margin-bottom: 60px;
 }
 
-.advantages-list li:first-child {
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    padding-top: 55px;
+}
+
+.advantages-item__wrapper {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.advantages-list li:nth-child(3) {
+.recommendations {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
+    flex-direction: row;
+    padding-bottom: 60px;
 }
 
-.reccomendations {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.advantages-item__text {
-    width: 400px;
-}
-
-.reccomendations-item {
+.recommendations-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    padding-top: 60px;
+    width: 400px;    
 }
 
-.grey-background {
-    
+.grey {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
 }
+
+.modal {
+    width: 568px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 315px;
+    margin-top: -86px;
+}
+
+.modal-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    min-height: 230px;
+}
+
+.button-adults {
+    align-self: flex-start;
+}
+
+.button-children {
+    align-self: flex-end;
+}
+
+.modal-buttons-number {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    position: relative;
+    margin-top: -386px;
+    z-index: -1;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hashtag {
+    width: 136px;
+    margin-left: 133px;
+
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    width: 155px;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin-right: 100px;
+}
+
+/* Стили для страницы с отелями */
+
+.hotels-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 1056px;
+    margin-left: 70px;
+    margin-right: 74px;
+
+    min-height: 393px;
+}
+
+.hotels-list__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    min-height: 150px;
+}
+
+.hotel-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 523px;
+    
+
+    min-height: 93px;
+}
+
+
+

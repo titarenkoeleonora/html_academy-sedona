@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a>Информация</a></li>
@@ -17,55 +17,69 @@
           <li><a>Гостиницы</a></li>
         </ul>
       </nav>
-        <a href="index.html">
-            <img src="img/logo_sedona.svg" alt="Логотип Cедона">
+        <a href="index.html" class="main-header-logo">
+          <img src="img/logo_sedona.svg" alt="Логотип Cедона">
         </a>
       </header>
       <main>
         <h1 class="visually-hidden">Гостиницы</h1>
           <section>
-              <h2  class="visually-hidden">Поиск</h2>
+            <h2  class="visually-hidden">Поиск</h2>
             <!--Поиск-->
+            <div class="hotels-filter">
+            </div>
           </section>
           <section>
               <h2 class="visually-hidden">Список гостиниц</h2>
-            <ul class="hotels-list">
+              <ul class="hotels-list">
                 <li class="hotels-list__items">
                   <img src="img/amara.jpg" width="135px" height="90px" alt="Гостиница Amara Resort">
+                <div class="hotels-list__items--info">
                   <h3 class="hotels-list__name">Amara Resort &amp; Spa</h3>
                   <span>Гостиница</span> <span>от 4000 Р.</span>
                   <a href="https://amara-resort.com" class="blue-button">Подробнее</a>
                   <a href="https://amara-resort.com" class="brown-button">Забронировать</a>
+                </div>
+                <div class="hotel-rating">
                   <div class="hotel-rating__4"><!--4 звезды--></div>
-                  <span class="hotel-rating">Рейтинг: 8,5</span>
+                  <span class="hotel-rating__number">Рейтинг: 8,5</span>
+                </div>
                 </li>
                 <li  class="hotels-list__items">
-                    <img src="img/desert.jpg"  width="135px" height="90px" alt="Мотель Desert Quality">
-                    <h3 class="hotels-list__name">Desert Quail Inn</h3>
-                    <span>Мотель</span> <span>от 3000 Р.</span>
-                    <a href="https://desert-quali.com" class="blue-button">Подробнее</a>
-                    <a href="https://desert-quali.com" class="brown-button">Забронировать</a>
-                    <div class="hotel-rating__3"><!--3 звезды--></div>
-                    <span class="hotel-rating">Рейтинг: 8,9</span>
+                  <img src="img/desert.jpg"  width="135px" height="90px" alt="Мотель Desert Quality">
+                  <div class="hotels-list__items--info">
+                  <h3 class="hotels-list__name">Desert Quail Inn</h3>
+                  <span>Мотель</span> <span>от 3000 Р.</span>
+                  <a href="https://desert-quali.com" class="blue-button">Подробнее</a>
+                  <a href="https://desert-quali.com" class="brown-button">Забронировать</a>
+                </div>
+                <div class="hotel-rating">
+                  <div class="hotel-rating__3"><!--3 звезды--></div>
+                  <span class="hotel-rating__number">Рейтинг: 8,9</span>
+                </div>
                 </li>
                 <li  class="hotels-list__items">
-                    <img src="img/poco.jpg"  width="135px" height="90px" alt="Апартаменты Villas at Poco Diablo">
-                    <h3 class="hotels-list__name">Villas at Poco Diablo</h3>
-                    <span>Апартаменты</span> <span>от 2000 Р.</span>
-                    <a href="https://poco-diablo.com" class="blue-button">Подробнее</a>
-                    <a href="https://poco-diablo.com" class="brown-button">Забронировать</a>
-                    <div class="hotel-rating__2"><!--2 звезды--></div>
-                    <span class="hotel-rating">Рейтинг: 9,2</span>
+                  <img src="img/poco.jpg"  width="135px" height="90px" alt="Апартаменты Villas at Poco Diablo">
+                  <div class="hotels-list__items--info">
+                  <h3 class="hotels-list__name">Villas at Poco Diablo</h3>
+                  <span>Апартаменты</span> <span>от 2000 Р.</span>
+                  <a href="https://poco-diablo.com" class="blue-button">Подробнее</a>
+                  <a href="https://poco-diablo.com" class="brown-button">Забронировать</a>
+                </div>
+                  <div class="hotel-rating">
+                  <div class="hotel-rating__2"><!--2 звезды--></div>
+                  <span class="hotel-rating__number">Рейтинг: 9,2</span>
+                </div>
                 </li>
             </ul>
           </section>
       </main>
-      <footer>
+      <footer class="footer">
           <div class="hashtag">
             <p> &#35;visitSEDONA</p>
           </div>
           <div>
-            <ul>
+            <ul class="footer-social">
               <li class="icon">
                 <a href="https://twiiter.com" aria-label="Седона в Твиттере">
                   <img src="img/twitter.svg">
@@ -83,7 +97,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="footer-copyright">
             <img src="img/website_by.png" alt="website by">
               <a href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo_academy.png" alt="Лого HTML Academy" class="logo_academy">

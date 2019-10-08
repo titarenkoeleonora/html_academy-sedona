@@ -11,10 +11,10 @@
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="info.html" >Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation__item"><a href="info.html" >Информация</a></li>
+          <li class="site-navigation__item"><a href="#">Фото и видео</a></li>
+          <li class="site-navigation__item"><a href="#">Карта</a></li>
+          <li class="site-navigation__item"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
       <a class="main-header-logo">
@@ -35,7 +35,7 @@
         <ul class="advantages-list">
           <li class="advantages-item advantages-item__wrapper">
             <div class="advantages-item__text blue-background">
-              <h3 class="title">Настоящий городок</h3>
+              <h3 class="title">Настоящий<br>городок</h3>
               <span> &mdash;&#8470;1&mdash; </span>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
@@ -60,7 +60,7 @@
           <li class="advantages-item advantages-item__wrapper">
             <img src="img/devil-bridge.jpg" width="800" height="255" alt="Мост Дьявола">
               <div class="advantages-item__text blue-background">
-                <h3 class="title">Там есть Мост дьявола</h3>
+                <h3 class="title">Там есть<br>Мост дьявола</h3>
                 <span> &mdash;&#8470;2&mdash; </span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
@@ -104,10 +104,12 @@
           <p>
             <label for="arrival-date">Дата заезда</label>
             <input type="date" id="arrival-date" class="modal-item">
+            <button type="button" class="date-button"></button>
           </p>
           <p>
             <label for="date-of-depature">Дата выезда</label>
             <input type="date" id="date-of-depature"  class="modal-item">
+            <button type="button" class="date-button"></button>
           </p>
           <div class="modal-buttons-number">
           <div class="button-adults">

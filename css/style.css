@@ -1,3 +1,7 @@
+html {
+    background-color: #f2f2f2;
+}
+
 body {
     width: 1200px;
     margin: 0 auto;
@@ -10,9 +14,7 @@ body {
     color: #000000;
     text-transform: uppercase;
 
-    width: 1200px;
-    background-image: url("../img/whit-back.jpg");
-    background-repeat: no-repeat;
+    background-color: #ffffff;
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
@@ -47,10 +49,18 @@ a {
     color: #000000
 }
 
-.site-navigation__item {
+.site-navigation li:nth-child(4n+1),
+.site-navigation li:nth-child(4n+2) {
     width: 239px;
-    text-align: center;
+    text-align: left;
 }
+
+.site-navigation li:nth-child(4n+3),
+.site-navigation li:nth-child(4n+4) {
+    width: 239px;
+    text-align: right;
+}
+
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -65,36 +75,34 @@ a {
 /* Картинка-приветствие */
 
 
-.logo-background {
+.first-screen {
     box-sizing: content-box;
     position: relative;
     background-image: url("../img/background_photo.jpg");
     background-repeat: no-repeat;
+    background-position-y: -81px;
     width: 100%;
-    height: 800px;
+    height: 509px;
     margin: 0 auto;
     overflow: hidden;
-    margin-top: -100px;
-    z-index: -10;
+    
 }
 
-.logo-background img {
+.first-screen img {
     position: absolute;
-    top: 157px;
+    top: 76px;
     left: 370px;
 }
 
-.logo-background::after {
+.first-screen::after {
     content: "";
     position: absolute;
     background-image: url("../img/polygon.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 59px;
-    margin-bottom: 211px;
     bottom: -1px;
     display: block;
-    z-index: 100;
 }
 
 
@@ -116,7 +124,6 @@ a {
 }
 
 .advantages {
-    margin-top: -271px;
     background-color: #fff;
     display: block;
     position: relative;
@@ -136,13 +143,14 @@ a {
 .advantages-item__text {
     display: flex;
     flex-direction: column;
-    width: 280px;
+    width: 303px;
     vertical-align: middle;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 50px;
+    padding-left: 48px;
 
     min-height: 255px;
 }
+
 
 .blue-background {
     background-color: #81b3d2;
@@ -164,8 +172,8 @@ a {
     display: block;
     padding-top: 102px;
     margin: 0 auto;
-    margin-top: 61px;
-    padding-bottom: 16px; 
+    margin-top: 59px;
+    padding-bottom: 20px; 
 }
 
 .recommendations-title:before {
@@ -201,7 +209,6 @@ a {
     margin: 0;
     padding: 0;
     line-height: 23px
-
   }
 
 /* Форма поиска гостиниц */
@@ -209,6 +216,8 @@ a {
 .modal {
     background-color: #ffffff;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    position: relative;
+    z-index: 2;
 }
 
 .modal a {
@@ -225,7 +234,7 @@ p.modal-subtitle__text {
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 28px;
 }
 
 .modal-form {
@@ -262,11 +271,14 @@ p.modal-subtitle__text {
 
 .modal input[type="text"] {
     position: relative;
-    width: 308px;
-    height: 38px;
+    width: 346px;
+    height: 40px;
     font-size: inherit;
     font-weight: inherit;
     text-transform: inherit;
+    padding-right: 38px;
+    padding-left: 5px;
+    box-sizing: border-box;
 }
 
 .modal input[type="number"] {
@@ -289,11 +301,10 @@ input::-webkit-input-placeholder {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
     align-content: flex-end;
     align-items: center;
 
-    padding-top: 55px;
+    padding-top: 51px;
 
     min-height: 105px;
     width: 458px;
@@ -302,14 +313,16 @@ input::-webkit-input-placeholder {
 .arrival-date {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-content: flex-end;
-    align-items: center;
+    /* align-items: center; */
     width: 458px;
+    position: relative;
+    margin-bottom: 28px;
 }
 
 .arrival-date label {
-    margin-right: auto;
+    align-self: center;
 }
 
 .modal-button {
@@ -320,10 +333,12 @@ input::-webkit-input-placeholder {
 
 .date-button {
     border: none;
-    position: relative;
+    position: absolute;
+    right: 0px;
     background-color: #f2f2f2 ;
     width: 38px;
-    min-height: 40px;
+    height: 40px;
+
 }
 
 .date-button:hover path,
@@ -376,8 +391,8 @@ input::-webkit-input-placeholder {
 
 .modal .blue-button {
     width: 458px;
-    margin-top: 55px;
-    margin-bottom: 60px;
+    margin-top: 54px;
+    margin-bottom: 55px;
     font-size: 21px;
 
     min-height: 58px;
@@ -548,9 +563,11 @@ button[type="submit"] {
 }
 
 .hotel-rating__number {
+    display: block;
     width: 110px;
     height: 27px;
     background-color: #f2f2f2;
+    margin-top: 48px;
 }
 
 .hotel-rating__4 {
@@ -602,12 +619,13 @@ button[type="submit"] {
     margin: 0;
     padding: 0;
     position: absolute;
-    margin-left: 530px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
 }
 
 .site-navigation {
-    padding: 0;
+    padding: 0 72px;
     width: 1200px;
     display: flex;
     flex-direction: row;
@@ -615,23 +633,18 @@ button[type="submit"] {
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    box-sizing: border-box;
 }
 
-.site-navigation li:first-child {
-    margin-left: auto;
-}
 
 .site-navigation li:nth-child(2) {
-    margin-right: 122px;
+    margin-right: auto;
 }
 
 .site-navigation li:nth-of-type(3) {
-    margin-left: 122px;
+    margin-left: auto;
 }
 
-.site-navigation li:last-child {
-    margin-right: auto;
-}
 
 .logo-background {
     display: flex;
@@ -659,7 +672,7 @@ button[type="submit"] {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    padding-bottom: 84px;
+    padding-bottom: 82px;
 }
 
 .recommendations-item {
@@ -685,7 +698,7 @@ button[type="submit"] {
     flex-wrap: wrap;
     align-items: center;
     margin-left: 315px;
-    margin-top: -86px;
+    margin-top: -82px;
 }
 
 .modal-title {
@@ -693,7 +706,7 @@ button[type="submit"] {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 58px;
     min-height: 230px;
 }
 
@@ -702,18 +715,17 @@ button[type="submit"] {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    margin-top: 15px;
 }
 
 .modal-buttons-number label {
     margin-right: auto;
+    align-self: center;
 }
 
 .button-adults {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 15px;
     
     width: 226px;
 }
@@ -722,15 +734,14 @@ button[type="submit"] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 15px;
 
     width: 179px;
 }
 
 .map {
     position: relative;
-    margin-top: -404px;
-    z-index: -1;
+    margin-top: -395px;
+    z-index: 1;
 }
 
 .footer {

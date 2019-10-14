@@ -38,7 +38,7 @@ a {
 .main-navigation {
     font-weight: 700;
     line-height: 26px;
-    background-color: #fff ;
+    background-color: #fff;
 }
 
 .site-navigation {
@@ -46,7 +46,8 @@ a {
 }
 
 .site-navigation a {
-    color: #000000
+    outline: none;
+    color: #000000;
 }
 
 .site-navigation li:nth-child(4n+1),
@@ -70,6 +71,10 @@ a {
 .site-navigation a:active {
     opacity: 0.3;
     color: #000000;
+}
+
+.site-navigation__item .active {
+    color: #766357;
 }
 
 /* Картинка-приветствие */
@@ -116,11 +121,13 @@ a {
 .main-title {
     display: block;
     padding-top: 61px;
+    letter-spacing: 0.1px;
 }
 
 .main-subtitle {
     margin: 0;
-    padding-top: 26px;
+    padding-top: 27px;
+    letter-spacing: 0.1px;
 }
 
 .advantages {
@@ -140,6 +147,10 @@ a {
     list-style: none;
 }
 
+.advantages-item--number {
+    padding-top: 4px;
+}
+
 .advantages-item__text {
     display: flex;
     flex-direction: column;
@@ -149,6 +160,12 @@ a {
     padding-left: 48px;
 
     min-height: 255px;
+}
+
+.advantages-item__text p {
+    margin: 0;
+    margin-top: 19px;
+    line-height: 22px;
 }
 
 
@@ -162,18 +179,24 @@ a {
 }
 
 .advantages-item .title {
-    padding-top: 45px;
+    padding-top: 47px;
     padding-bottom: 16px;
     margin: 0;
+    line-height: 22px;
 }
+
+.grey .advantages-item h3 {
+    padding-top: 49px;
+}
+
 .recommendations-title {
     position: relative;
     width: 100px;
     display: block;
-    padding-top: 102px;
+    padding-top: 100px;
     margin: 0 auto;
-    margin-top: 59px;
-    padding-bottom: 20px; 
+    margin-top: 61px;
+    padding-bottom: 19px;
 }
 
 .recommendations-title:before {
@@ -204,11 +227,22 @@ a {
     background-image: url("../img/icon-3.png");
   }
 
+  .recommendations-title--souvenirs {
+    margin-top: 58px;
+    margin-bottom: 1px;
+    padding-top: 102px;
+    letter-spacing: 0.1px;
+  }
+
+  .recommendations-title--souvenirs p {
+    letter-spacing: 0.15px;
+  }
+
   .recommendations-item__text {
     width: 290px;
     margin: 0;
     padding: 0;
-    line-height: 23px
+    line-height: 21px;
   }
 
 /* Форма поиска гостиниц */
@@ -235,6 +269,7 @@ p.modal-subtitle__text {
     padding: 0;
     text-align: center;
     margin-top: 28px;
+    line-height: 25px;
 }
 
 .modal-form {
@@ -269,7 +304,7 @@ p.modal-subtitle__text {
     border: 2px solid #e5e5e5;
 }
 
-.modal input[type="text"] {
+.arrival-date input[type="text"] {
     position: relative;
     width: 346px;
     height: 40px;
@@ -277,21 +312,22 @@ p.modal-subtitle__text {
     font-weight: inherit;
     text-transform: inherit;
     padding-right: 38px;
-    padding-left: 2px;
+    padding-left: 14px;
     box-sizing: border-box;
 }
 
-.modal input[type="number"] {
+.modal-buttons-number input[type="text"] {
     width: 38px;
-    height: 38px;
+    height: 40px;
     font-size: inherit;
     font-weight: inherit;
     text-transform: inherit;
+    padding-left: 16px;
+    box-sizing: border-box;
 }
 
 input::-webkit-input-placeholder { 
     color: #000000;
-    padding-left: 12px;
 }
 
 .reservation-date {
@@ -304,7 +340,7 @@ input::-webkit-input-placeholder {
     align-content: flex-end;
     align-items: center;
 
-    padding-top: 51px;
+    padding-top: 53px;
 
     min-height: 105px;
     width: 458px;
@@ -323,6 +359,9 @@ input::-webkit-input-placeholder {
 
 .arrival-date label {
     align-self: center;
+    padding-left: 2px;
+    letter-spacing: 0.3px;
+
 }
 
 .modal-button {
@@ -391,11 +430,17 @@ input::-webkit-input-placeholder {
 
 .modal .blue-button {
     width: 458px;
-    margin-top: 54px;
+    margin-top: 53px;
     margin-bottom: 55px;
     font-size: 21px;
 
     min-height: 58px;
+}
+
+input[type="text"],
+input[type="submit"],
+button[type="button"] {
+    outline: none;
 }
 
 /* Кнопки */
@@ -434,7 +479,7 @@ button[type="submit"] {
 .modal .brown-button {
     padding-top: 31px;
     padding-right: 139px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
     padding-left: 139px;
 }
 
@@ -525,7 +570,7 @@ button[type="submit"] {
 
 .hotels-filter {
     width: 100%;
-    min-height: 216px;
+    min-height: 303px;
 }
 
 /* Список гостиниц */
@@ -545,7 +590,10 @@ button[type="submit"] {
     line-height: 26px;
     padding: 0;
     margin: 0;
-    padding-bottom: 17px;
+    padding-top: -5px;
+    padding-bottom: 10px;
+    line-height: 15px;
+    letter-spacing: 0.3px;
 }
 
 .hotels-list__name:hover,
@@ -562,15 +610,33 @@ button[type="submit"] {
     margin-left: 30px;
 }
 
+.hotel-rating {
+    display: flex;
+}
+
 .hotel-rating__number {
     display: block;
     width: 110px;
     height: 27px;
     background-color: #f2f2f2;
     margin-top: 48px;
+    text-align: center;
 }
 
-.hotel-rating__4 {
+.hotel-rating--stars {
+    display: flex;
+}
+
+.star {
+    width: 18px;
+    height: 17px;
+    background-image: url(../img/stars.svg);
+    background-size: 18px 17px;
+    background-repeat: no-repeat;
+    padding-left: 4px;
+}
+
+/* .hotel-rating__4 {
     width: 70px;
     height: 17px;
     background: url("../img/stars.svg") 18px 17px;
@@ -586,12 +652,13 @@ button[type="submit"] {
     width: 35px;
     height: 18px;
     background: url("../img/stars.svg") 18px 17px;
-}
+} */
 
 .hotels-list__items--info .blue-button {
     width: 110px;
     min-height: 27px;
     text-align: center;
+    margin-top: 11px;
 }
 
 .hotels-list__items--info .brown-button {
@@ -639,10 +706,12 @@ button[type="submit"] {
 
 .site-navigation li:nth-child(2) {
     margin-right: auto;
+    letter-spacing: 0.2px;
 }
 
 .site-navigation li:nth-of-type(3) {
     margin-left: auto;
+    letter-spacing: 0.6px;
 }
 
 
@@ -672,7 +741,7 @@ button[type="submit"] {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    padding-bottom: 82px;
+    padding-bottom: 85px;
 }
 
 .recommendations-item {
@@ -698,7 +767,7 @@ button[type="submit"] {
     flex-wrap: wrap;
     align-items: center;
     margin-left: 315px;
-    margin-top: -82px;
+    margin-top: -81px;
 }
 
 .modal-title {
@@ -769,12 +838,12 @@ button[type="submit"] {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 155px;
+    width: 149px;
     margin: 0;
     padding: 0;
     margin-top: 35px;
     margin-bottom: 35px;
-    margin-left: 33px;
+    margin-left: 30px;
 }
 
 .footer-copyright {
@@ -782,8 +851,8 @@ button[type="submit"] {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    width: 200px;
-    margin-right: 100px;
+    width: 197px;
+    margin-right: 101px;
 }
 
 /* Стили для страницы с отелями */

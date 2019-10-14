@@ -38,7 +38,7 @@
         <li class="advantages-item advantages-item__wrapper">
           <div class="advantages-item__text blue-background">
             <h3 class="title">Настоящий<br>городок</h3>
-            <span> &mdash;&#8470;1&mdash; </span>
+            <span class="advantages-item--number"> &mdash;&#8470;1&mdash; </span>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <img src="img/photo_1.jpg" width="800" height="255" alt="Седона">
@@ -63,7 +63,7 @@
           <img src="img/devil-bridge.jpg" width="800" height="255" alt="Мост Дьявола">
           <div class="advantages-item__text blue-background">
             <h3 class="title">Там есть<br>Мост дьявола</h3>
-            <span> &mdash;&#8470;2&mdash; </span>
+            <span class="advantages-item--number"> &mdash;&#8470;2&mdash; </span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </li>
@@ -71,21 +71,21 @@
           <li class="advantages-item">
             <div class="advantages-item__text grey-background">
               <h3 class="title">Небольшая<br>площадь</h3>
-              <span> &mdash;&#8470;3&mdash; </span>
+              <span  class="advantages-item--number"> &mdash;&#8470;3&mdash; </span>
               <p>Все достопримечательности<br>находятся очень близко</p>
             </div>
           </li>
           <li class="advantages-item">
             <div class="advantages-item__text grey-background">
               <h3 class="title">Красивая<br>дорога</h3>
-              <span> &mdash;&#8470;4&mdash; </span>
+              <span  class="advantages-item--number"> &mdash;&#8470;4&mdash; </span>
               <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
             </div>
           </li>
           <li class="advantages-item">
             <div class="advantages-item__text grey-background">
               <h3 class="title">Мало<br>туристов</h3>
-              <span> &mdash;&#8470;5&mdash; </span>
+              <span  class="advantages-item--number"> &mdash;&#8470;5&mdash; </span>
               <p>Большинство едет в гранд каньон<br>и толпится там</p>
             </div>
           </li>
@@ -137,14 +137,14 @@
         <div class="modal-buttons-number">
           <div class="button-adults">
             <label for="adults">Взрослые:</label>
-            <button class="modal-button modal-button--minus"></button>
-            <input type="number" id="adults" class="modal-item modal-item__adults" placeholder="2">
-            <button class="modal-button modal-button--plus"></button>
+            <button  type="button"class="modal-button modal-button--minus"></button>
+            <input type="text" id="adults" class="modal-item modal-item__adults" placeholder="2">
+            <button  type="button"class="modal-button modal-button--plus"></button>
           </div>
           <div class="button-children">
             <label for="children">Дети:</label>
             <button type="button" class="modal-button modal-button--minus"></button>
-            <input type="number" id="children" class="modal-item modal-item__children" placeholder="0">
+            <input type="text" id="children" class="modal-item modal-item__children" placeholder="0">
             <button type="button" class="modal-button  modal-button--plus"></button>
           </div>
         </div>

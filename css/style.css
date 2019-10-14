@@ -468,6 +468,10 @@ button[type="submit"] {
     background-color: #503e33;
 }
 
+.text-button:focus .brown-button {
+    background-color: #604e43;
+}
+
 .brown-button:active .text-button {
     opacity: 0.3;
 }
@@ -548,6 +552,10 @@ button[type="submit"] {
 
 .icon:active svg {
     opacity: 0.3;
+}
+
+.footer-copyright__link {
+    outline: none;
 }
 
 .footer-copyright__link svg {

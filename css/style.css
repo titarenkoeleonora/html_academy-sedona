@@ -468,10 +468,6 @@ button[type="submit"] {
     background-color: #503e33;
 }
 
-.text-button:focus .brown-button {
-    background-color: #604e43;
-}
-
 .brown-button:active .text-button {
     opacity: 0.3;
 }

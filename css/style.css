@@ -128,7 +128,7 @@ a.disabled {
 
 .main-subtitle {
     margin: 0;
-    padding-top: 27px;
+    padding-top: 25px;
     letter-spacing: 0.1px;
 }
 
@@ -150,7 +150,7 @@ a.disabled {
 }
 
 .advantages-item--number {
-    padding-top: 6px;
+    padding-top: 5.48px;
 }
 
 .advantages-item__text {
@@ -166,9 +166,11 @@ a.disabled {
 
 .advantages-item__text p {
     margin: 0;
-    margin-top: 19px;
-    line-height: 22px;
+    margin-top: 17px;
+    line-height: 21px;
 }
+
+
 
 
 .blue-background {
@@ -188,7 +190,13 @@ a.disabled {
 }
 
 .grey .advantages-item h3 {
-    padding-top: 49px;
+    padding-top: 48px;
+}
+
+.grey .advantages-item p {
+    margin: 0;
+    margin-top: 19px;
+    line-height: 21px;
 }
 
 .recommendations-title {
@@ -358,7 +366,7 @@ input::-webkit-input-placeholder {
     flex-wrap: nowrap;
     align-content: flex-end;
     align-items: center;
-    padding-top: 53px;
+    padding-top: 55px;
     min-height: 105px;
     width: 458px;
 }
@@ -370,7 +378,7 @@ input::-webkit-input-placeholder {
     align-content: flex-end;
     width: 458px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
 
 .arrival-date label {
@@ -392,7 +400,7 @@ input::-webkit-input-placeholder {
     right: 0px;
     background-color: inherit ;
     width: 38px;
-    height: 40px;
+    height: 38px;
 
 }
 
@@ -749,7 +757,7 @@ button[type="submit"] {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    padding-bottom: 83px;
+    padding-bottom: 81px;
 }
 
 .recommendations-item {
@@ -783,7 +791,7 @@ button[type="submit"] {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 58px;
+    padding-top: 57px;
     min-height: 230px;
 }
 
@@ -849,7 +857,7 @@ button[type="submit"] {
     width: 149px;
     margin: 0;
     padding: 0;
-    margin-top: 36px;
+    margin-top: 37px;
     margin-bottom: 35px;
     margin-left: 29px;
 }

@@ -531,6 +531,10 @@ button[type="submit"] {
     list-style: none;
 }
 
+.icon a {
+    outline: none;
+}
+
 .icon:before {
     content: "";
     display: block;
@@ -598,6 +602,10 @@ button[type="submit"] {
 .hotels-list__items {
     list-style: none;
     border-top: 1px solid #f2f2f2;
+}
+
+.hotels-list__items a {
+    outline: none;
 }
 
 .hotels-list:last-child {

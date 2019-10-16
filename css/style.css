@@ -481,6 +481,7 @@ button[type="submit"] {
     background-color: #766357;
     text-transform: uppercase;
     font-weight: 700;
+    display: block;
 }
 
 .brown-button:hover,
@@ -512,6 +513,7 @@ button[type="submit"] {
     background-color: #81b3d2;
     text-transform: uppercase;
     font-weight: 700;
+    display: block;
 }
 
 .blue-button:hover,
@@ -532,6 +534,7 @@ button[type="submit"] {
 }
 
 .icon {
+    display: block;
     position: relative;
     width: 46px;
     height: 48px;
@@ -556,21 +559,22 @@ button[type="submit"] {
 .icon:hover,
 .icon:focus {
     background-color: #669ec0;
+    outline: none;
 }
 
 .icon:active {
     background-color: #5496bd;
 }
 
-.icon:first-of-type svg {
+.twitter svg {
     padding: 17px 14px 16px 15px;
 }
 
-.icon:nth-of-type(2) svg {
+.facebook svg {
     padding: 13px 17px 13px 17px;
 }
 
-.icon:last-of-type svg {
+.youtube svg {
     padding: 16px 13px 16px 13px;
 }
 
@@ -860,6 +864,8 @@ button[type="submit"] {
     margin-top: 37px;
     margin-bottom: 35px;
     margin-left: 29px;
+
+    list-style: none;
 }
 
 .footer-copyright {

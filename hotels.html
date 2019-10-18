@@ -29,6 +29,78 @@
       <h2 class="visually-hidden">Поиск</h2>
       <!--Поиск-->
       <div class="hotels-filter">
+        <form class="filter-form">
+          <div class="filter-form--item infrastructure">
+            <legend class="filter-range-title">Инфраструктура:</legend>
+            <ul>
+              <li class="checkbox" tabindex="0">
+                <input type="checkbox" id="swimming-pool" class="filter-input-checkbox" checked></input>
+                <label for="swimming-pool">Бассейн</label>
+              </li>
+              <li class="checkbox" tabindex="0">
+                <input type="checkbox" id="parking" class="filter-input-checkbox">
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="checkbox" tabindex="0">
+                <input type="checkbox" id="wi-fi" class="filter-input-checkbox">
+                <label for="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-form--item housing">
+            <legend class="filter-range-title">Тип жилья:</legend>
+            <ul>
+              <li class="checkbox" tabindex="0">
+                <input type="checkbox" id="hotel" class="filter-input-checkbox" checked></input>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li class="checkbox" tabindex="0">
+                <input type="checkbox" id="motel" class="filter-input-checkbox" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li class="checkbox" tabindex="0">
+                <input type="checkbox" id="apartments" class="filter-input-checkbox" checked>
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-range">
+            <legend class="filter-range-title">Стоимость в сутки (р):</legend>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
+        </form>
+        <section class="hotels-sorting">
+          <p class="hotels-sorting--found">Найдено: 3</p>
+          <div class="sorting-type">
+            <p class="sorting-type--title">Сортировка:</p>
+            <ul class="sorting-type--list">
+              <li class="sorting-type--item active" tabindex="0">по цене</li>
+              <li tabindex="0">по типу</li>
+              <li tabindex="0">по рейтингу</li>
+            </ul>
+          </div>
+          <div class="arrows">
+            <div class="arrows-up" tabindex="0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#cacaca" d="M5.5 0L0 10h11z" /></svg>
+            </div>
+            <div class="arrows-down active" tabindex="0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#cacaca" d="M5.5 10L0 0h11" /></svg>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
     <section>
@@ -41,11 +113,11 @@
             <div class="container">
               <div class="hotel-list--container">
                 <span>Гостиница</span>
-                  <a href="" class="text-button blue-button">Подробнее</a>
+                <a href="" class="text-button blue-button">Подробнее</a>
               </div>
               <div class="hotel-list--container">
                 <span>от 4000 Р.</span>
-                  <a href="" class="text-button brown-button">Забронировать</a>
+                <a href="" class="text-button brown-button">Забронировать</a>
               </div>
             </div>
           </div>
@@ -69,11 +141,11 @@
             <div class="container">
               <div class="hotel-list--container">
                 <span>Мотель</span>
-                  <a href="" class="text-button blue-button">Подробнее</a>
+                <a href="" class="text-button blue-button">Подробнее</a>
               </div>
               <div class="hotel-list--container">
                 <span>от 3000 Р.</span>
-                  <a href="" class="text-button brown-button">Забронировать</a>
+                <a href="" class="text-button brown-button">Забронировать</a>
               </div>
             </div>
           </div>
@@ -94,11 +166,11 @@
             <div class="container">
               <div class="hotel-list--container">
                 <span>Апартаменты</span>
-                  <a href="" class="text-button blue-button">Подробнее</a>
+                <a href="" class="text-button blue-button">Подробнее</a>
               </div>
               <div class="hotel-list--container">
                 <span>от 2000 Р.</span>
-                  <a href="" class="text-button brown-button">Забронировать</a>
+                <a href="" class="text-button brown-button">Забронировать</a>
               </div>
             </div>
           </div>
@@ -128,7 +200,7 @@
               viewBox="0 0 17 15">
               <path fill="#FFF"
                 d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
-              </svg>
+            </svg>
           </a>
         </li>
         <li>
@@ -143,7 +215,7 @@
               viewBox="0 0 20 16">
               <path fill="#FFF"
                 d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
-              </svg>
+            </svg>
           </a>
         </li>
       </ul>

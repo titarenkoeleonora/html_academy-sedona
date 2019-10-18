@@ -473,7 +473,7 @@ button[type="button"] {
     color: #ffffff;
 }
 
-button[type="submit"] {
+.modal-form button[type="submit"] {
     border: 0;
 }
 
@@ -609,6 +609,353 @@ button[type="submit"] {
     min-height: 303px;
 }
 
+.filter-form {
+    /* margin-top: 31px;
+    margin-right: 74px;
+    margin-bottom: 33px;
+    margin-left: 72px; */
+
+    background-image: url("../img/filter_background.jpg");
+    background-size: 1200px 800px;
+    background-repeat: no-repeat;
+    background-position-y: -295px;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    min-height: 217px;
+}
+
+.filter-form--item {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-form ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.checkbox {
+    margin-bottom: 21px;
+}
+
+input[type=checkbox] {
+    display:none;
+}
+
+.checkbox label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
+    padding-left: 40px;
+    line-height: 25px;
+}
+
+.housing label {
+    letter-spacing: 0.3px;
+}
+
+.infrastructure.filter-range-title {
+    letter-spacing: 0.2px;
+}
+
+.filter-input-checkbox + label::before {
+    content:"";
+	display:block;
+	width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.filter-input-checkbox:checked + label::before {
+    content:"";
+	display:block;
+    width: 26px;
+    height: 23px;
+    background-image: url("../img/checkbox-on.svg");
+    position: absolute;
+    top:0;
+	left:0;
+}
+
+.filter-input-checkbox:disabled + label::before {
+    background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.filter-input-checkbox:checked:disabled + label::before {
+    background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.infrastructure {
+    margin-left: 72px;
+}
+
+.housing {
+    margin-left: 118px;
+}
+
+.filter-range {
+    width: 317px;
+    margin-right: 72px;
+    margin-left: auto;
+    text-transform: uppercase;
+  }
+  
+  .filter-range-title {
+    margin-top: 27px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .housing .filter-range-title {
+    margin-bottom: 25px;
+  }
+
+  .filter-range .filter-range-title {
+    margin-bottom: 11px;
+  }
+  
+  .price-controls {
+    position: relative;
+    
+    height: 32px;
+    margin-bottom: 20px;
+    
+    font-size: 0;
+  
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+  
+  .price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    width: 2px;
+    height: 22px;
+  
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+  
+  .price-controls label {
+    display: inline-block;
+  
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+  
+    cursor: pointer;
+  }
+  
+  .price-controls .min-price,
+  .price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+    margin-top: -4px;
+  }
+
+  .price-controls .min-price {
+    margin-left: -2px;
+  }
+
+  .price-controls .max-price {
+    margin-left: -7px;
+  }
+  
+  .price-controls input {
+    width: 50px;
+    margin: 0;
+    margin-top: -4px;
+  
+    color: inherit;
+    font: inherit;
+  
+    background: none;
+    border: none;
+  }
+  
+  .range-controls {
+    position: relative;
+  
+    margin-bottom: 33px;
+  }
+  
+  .range-controls .scale {
+    height: 2px;
+  
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .range-controls .bar {
+    width: 80%;
+    height: 2px;
+  
+    background: #ffffff;
+  }
+  
+  .range-toggle {
+    position: absolute;
+    top: -9px;
+    
+    width: 4px;
+    height: 4px;
+  
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+  }
+  
+  .range-toggle:hover,
+  .range-toggle:focus {
+    transform: scale(1.2);
+  }
+
+  .range-toggle:active {
+    transform: scale(1.2);
+  }
+  
+  .range-toggle-min {
+    left: 0;
+  }
+  
+  .range-toggle-max {
+    left: 80%;
+  }
+  
+  .btn-transparent {
+    display: block;
+    margin-top: -2px;
+    margin-left: 82px;
+    padding: 6px 35px;
+  
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+  
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .btn-transparent:hover,
+  .btn-transparent:focus {
+    color: #000000;
+    background: #ffffff;
+  }
+
+  .hotels-sorting {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    margin-left: 72px;
+  }
+
+  .hotels-sorting--found {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-right: 47px;
+  }
+
+  .sorting-type {
+    width: 363px;
+    display: flex;
+    margin-top: 2px;
+    
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .sorting-type--title {
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+  }
+
+  .sorting-type--list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sorting-type--list li {
+    display: inline-block;
+    color: #cacaca;
+    border-bottom: 1px dotted #cacaca;
+    line-height: 14px;
+    outline: none;
+  }
+
+  .sorting-type--list li:hover,
+  .sorting-type--list li:focus {
+    color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
+  }
+
+  .sorting-type--list li:active {
+    color: #000000;
+    border: none;
+  }
+
+  .sorting-type--list li:first-child,
+  .sorting-type--list li:nth-child(2) {
+    margin-right: 30px;
+  }
+
+  .sorting-type--item.active {
+    color: #81b3d2;
+    border: none;
+  }
+
+  .arrows {
+    margin-left: auto;
+    margin-right: 73px;
+  }
+
+  .arrows-up {
+    margin-right: 8px;
+  }
+
+  .arrows-up,
+  .arrows-down {
+    display: inline-block;
+  }
+
+  .arrows-up:hover path,
+  .arrows-down:hover path,
+  .arrows-up:focus path,
+  .arrows-down:focus path {
+    fill: #000000;
+  }
+
+  .arrows-up:active path,
+  .arrows-down:active path {
+    fill: #81b3d2;
+  }
+
+  .arrows-down.active path {
+    fill: #81b3d2;
+  }
+
 /* Список гостиниц */
 
 .hotels-list__items {
@@ -646,7 +993,7 @@ button[type="submit"] {
 .hotels-list__items--info {
     width: 258px;
     margin-left: 30px;
-    padding-top: 5px;
+    padding-top: 3px;
 }
 
 .hotel-rating {
@@ -686,6 +1033,8 @@ button[type="submit"] {
     min-height: 27px;
     text-align: center;
 }
+
+
 
 /* Сеточные стили */
 

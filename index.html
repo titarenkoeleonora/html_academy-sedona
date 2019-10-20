@@ -27,17 +27,17 @@
     <section class="first-screen">
       <h1>
         <span class="visually-hidden">Город Седона</span>
-        <img src="img/welcome.png" alt="Добро пожаловать" width="459px" height="353px">
+        <img src="img/welcome.png" alt="Добро пожаловать" width="459" height="353">
       </h1>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <b class="title main-title">Седона &mdash; небольшой городок в Аризоне,<br>заслуживающий большего!</b>
+      <b class="title main-title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b>
       <p class="main-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ul class="advantages-list">
         <li class="advantages-item advantages-item__wrapper">
           <div class="advantages-item__text blue-background">
-            <h3 class="title">Настоящий<br>городок</h3>
+            <h3 class="title">Настоящий городок</h3>
             <span class="advantages-item--number"> &mdash;&#8470;1&mdash; </span>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
@@ -67,97 +67,100 @@
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </li>
-        <div class="grey">
-          <li class="advantages-item">
-            <div class="advantages-item__text advantages-item__text-3 grey-background">
-              <h3 class="title">Небольшая<br>площадь</h3>
-              <span  class="advantages-item--number"> &mdash;&#8470;3&mdash; </span>
-              <p>Все достопримечательности<br>находятся очень близко</p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-item__text grey-background">
-              <h3 class="title">Красивая<br>дорога</h3>
-              <span  class="advantages-item--number"> &mdash;&#8470;4&mdash; </span>
-              <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-item__text advantages-item__text-5 grey-background">
-              <h3 class="title">Мало<br>туристов</h3>
-              <span  class="advantages-item--number"> &mdash;&#8470;5&mdash; </span>
-              <p>Большинство едет в гранд каньон<br>и толпится там</p>
-            </div>
-          </li>
-        </div>
+        <li>
+          <ul class="grey">
+            <li class="advantages-item">
+              <div class="advantages-item__text advantages-item__text-3 grey-background">
+                <h3 class="title">Небольшая площадь</h3>
+                <span class="advantages-item--number"> &mdash;&#8470;3&mdash; </span>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>
+            </li>
+            <li class="advantages-item">
+              <div class="advantages-item__text grey-background">
+                <h3 class="title">Красивая дорога</h3>
+                <span class="advantages-item--number"> &mdash;&#8470;4&mdash; </span>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="advantages-item">
+              <div class="advantages-item__text advantages-item__text-5 grey-background">
+                <h3 class="title">Мало туристов</h3>
+                <span class="advantages-item--number"> &mdash;&#8470;5&mdash; </span>
+                <p class="text-5">Большинство едет в гранд каньон и толпится там</p>
+              </div>
+            </li>
+          </ul>
+        </li>
       </ul>
     </section>
-    <h2 class="visually-hidden">Поиск гостиниц</h2>
-    <div class="modal-title">
-      <b class="modal-subtitle">Заинтересовались?</b>
-      <p class="modal-subtitle__text">
-        Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
-      </p>
-    </div>
-    <div class="modal">
-      <div class="brown-button" tabindex="0">
-        <a class="text-button">Поиск гостиницы в Седоне</a>
+    <section>
+      <h2 class="visually-hidden">Поиск гостиниц</h2>
+      <div class="modal-title">
+        <b class="modal-subtitle">Заинтересовались?</b>
+        <p class="modal-subtitle__text">
+          Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
       </div>
-      <form action="https://echo.htmlacademy.ru" method="post" class="modal-form">
-        <div class="reservation-date">
-          <div class="arrival-date">
-            <label for="arrival-date">Дата заезда: </label>
-            <input type="text" id="arrival-date" class="modal-item" placeholder="24 апреля 2017">
-            <button type="button" class="date-button" aria-label="Календарь">
-              <svg width="21" height="23" viewBox="0 0 21 23" fill="#A9A9A9" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
-                  fill="#A9A9A9" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M4.59399 9.22498H7.21899V11.291H4.59399V9.22498ZM4.59399 12.668H7.21899V14.735H4.59399V12.668ZM7.21899 16.112H4.59399V18.178H7.21899V16.112ZM9.18799 16.112H11.813V18.178H9.18799V16.112ZM11.813 12.668H9.18799V14.735H11.813V12.668ZM9.18799 9.22498H11.813V11.291H9.18799V9.22498ZM16.406 16.112H13.781V18.178H16.406V16.112ZM13.781 12.668H16.406V14.735H13.781V12.668ZM16.406 9.22498H13.781V11.291H16.406V9.22498Z"
-                  fill="#A9A9A9" />
-              </svg>
-            </button>
-          </div>
-          <div class="arrival-date">
-            <label for="date-of-depature">Дата выезда: </label>
-            <input type="text" id="date-of-depature" class="modal-item" placeholder="4 июля 2017">
-            <button type="button" class="date-button" aria-label="Календарь">
-              <svg width="21" height="23" viewBox="0 0 21 23" fill="#A9A9A9" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
-                  fill="#A9A9A9" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M4.59399 9.22498H7.21899V11.291H4.59399V9.22498ZM4.59399 12.668H7.21899V14.735H4.59399V12.668ZM7.21899 16.112H4.59399V18.178H7.21899V16.112ZM9.18799 16.112H11.813V18.178H9.18799V16.112ZM11.813 12.668H9.18799V14.735H11.813V12.668ZM9.18799 9.22498H11.813V11.291H9.18799V9.22498ZM16.406 16.112H13.781V18.178H16.406V16.112ZM13.781 12.668H16.406V14.735H13.781V12.668ZM16.406 9.22498H13.781V11.291H16.406V9.22498Z"
-                  fill="#A9A9A9" />
-              </svg>
-            </button>
-          </div>
+      <div class="modal">
+        <div class="brown-button" tabindex="0">
+          <a class="text-button">Поиск гостиницы в Седоне</a>
         </div>
-        <div class="modal-buttons-number">
-          <div class="button-adults">
-            <label for="adults">Взрослые:</label>
-            <button  type="button"class="modal-button modal-button--minus"></button>
-            <input type="text" id="adults" class="modal-item modal-item__adults" placeholder="2">
-            <button  type="button"class="modal-button modal-button--plus"></button>
+        <form action="https://echo.htmlacademy.ru" method="post" class="modal-form">
+          <div class="reservation-date">
+            <div class="arrival-date">
+              <label for="arrival-date">Дата заезда: </label>
+              <input type="text" id="arrival-date" class="modal-item" placeholder="24 апреля 2017">
+              <button type="button" class="date-button" aria-label="Календарь">
+                <svg width="21" height="23" viewBox="0 0 21 23" fill="#A9A9A9" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
+                    fill="#A9A9A9" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.59399 9.22498H7.21899V11.291H4.59399V9.22498ZM4.59399 12.668H7.21899V14.735H4.59399V12.668ZM7.21899 16.112H4.59399V18.178H7.21899V16.112ZM9.18799 16.112H11.813V18.178H9.18799V16.112ZM11.813 12.668H9.18799V14.735H11.813V12.668ZM9.18799 9.22498H11.813V11.291H9.18799V9.22498ZM16.406 16.112H13.781V18.178H16.406V16.112ZM13.781 12.668H16.406V14.735H13.781V12.668ZM16.406 9.22498H13.781V11.291H16.406V9.22498Z"
+                    fill="#A9A9A9" />
+                </svg>
+              </button>
+            </div>
+            <div class="arrival-date">
+              <label for="date-of-depature">Дата выезда: </label>
+              <input type="text" id="date-of-depature" class="modal-item" placeholder="4 июля 2017">
+              <button type="button" class="date-button" aria-label="Календарь">
+                <svg width="21" height="23" viewBox="0 0 21 23" fill="#A9A9A9" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
+                    fill="#A9A9A9" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.59399 9.22498H7.21899V11.291H4.59399V9.22498ZM4.59399 12.668H7.21899V14.735H4.59399V12.668ZM7.21899 16.112H4.59399V18.178H7.21899V16.112ZM9.18799 16.112H11.813V18.178H9.18799V16.112ZM11.813 12.668H9.18799V14.735H11.813V12.668ZM9.18799 9.22498H11.813V11.291H9.18799V9.22498ZM16.406 16.112H13.781V18.178H16.406V16.112ZM13.781 12.668H16.406V14.735H13.781V12.668ZM16.406 9.22498H13.781V11.291H16.406V9.22498Z"
+                    fill="#A9A9A9" />
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="button-children">
-            <label for="children">Дети:</label>
-            <button type="button" class="modal-button modal-button--minus"></button>
-            <input type="text" id="children" class="modal-item modal-item__children" placeholder="0">
-            <button type="button" class="modal-button  modal-button--plus"></button>
+          <div class="modal-buttons-number">
+            <div class="button-adults">
+              <label for="adults">Взрослые:</label>
+              <button type="button" class="modal-button modal-button--minus"></button>
+              <input type="text" id="adults" class="modal-item modal-item__adults" placeholder="2">
+              <button type="button" class="modal-button modal-button--plus"></button>
+            </div>
+            <div class="button-children">
+              <label for="children">Дети:</label>
+              <button type="button" class="modal-button modal-button--minus"></button>
+              <input type="text" id="children" class="modal-item modal-item__children" placeholder="0">
+              <button type="button" class="modal-button  modal-button--plus"></button>
+            </div>
           </div>
-        </div>
-        <button type="submit" class="blue-button">
-          <span class="text-button">
-            Найти
-          </span>
-        </button>
-      </form>
-    </div>
+          <button type="submit" class="blue-button">
+            <span class="text-button">
+              Найти
+            </span>
+          </button>
+        </form>
+      </div>
     </section>
     <div class="map">
-      <img src="img/map.jpg" alt="Карта Седоны" width="1200px" height="590px">
+      <img src="img/map.jpg" alt="Карта Седоны" width="1200" height="590">
     </div>
   </main>
   <footer class="footer footer-main-page">
@@ -172,7 +175,7 @@
               viewBox="0 0 17 15">
               <path fill="#FFF"
                 d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
-              </svg>
+            </svg>
           </a>
         </li>
         <li>
@@ -187,7 +190,7 @@
               viewBox="0 0 20 16">
               <path fill="#FFF"
                 d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
-              </svg>
+            </svg>
           </a>
         </li>
       </ul>

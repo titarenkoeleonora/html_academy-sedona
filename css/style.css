@@ -315,6 +315,8 @@ p.modal-subtitle__text {
     /* width: 568px; */
     box-sizing: content-box;
     background-color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
 
     /* display: block;
     position: absolute;
@@ -1161,13 +1163,13 @@ input[type=checkbox] {
 }
 
 .modal {
-    position: absolute;
+    position: relative;
     width: 568px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    
+
     margin-top: -81px;
     left: 50%;
     transform: translateX(-50%);

@@ -103,9 +103,7 @@
         </p>
       </div>
       <div class="modal">
-        <div class="brown-button modal-link" tabindex="0">
-          <a href="" class="text-button">Поиск гостиницы в Седоне</a>
-        </div>
+        <a href="" class="text-button brown-button modal-link">Поиск гостиницы в Седоне</a>
         <form action="https://echo.htmlacademy.ru" method="post" class="modal-form">
           <div class="reservation-date">
             <div class="arrival-date">
@@ -124,7 +122,8 @@
             </div>
             <div class="arrival-date">
               <label for="date-of-depature">Дата выезда: </label>
-              <input type="text" id="date-of-depature" name="date-of-depature" class="modal-item" placeholder="4 июля 2017">
+              <input type="text" id="date-of-depature" name="date-of-depature" class="modal-item"
+                placeholder="4 июля 2017">
               <button type="button" class="date-button" aria-label="Календарь">
                 <svg width="21" height="23" viewBox="0 0 21 23" fill="#A9A9A9" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -207,16 +206,15 @@
     </div>
   </footer>
   <script>
-  var link = document.querySelector(".modal-link");
-  var modalForm = document.querySelector(".modal-form");
-  
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    modalForm.classList.toggle("modal-none");
-});
+    var link = document.querySelector(".modal-link");
+    var modalForm = document.querySelector(".modal-form");
 
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modalForm.classList.toggle("modal-none");
+    });
 
-</script>
+  </script>
 </body>
 
 </html>

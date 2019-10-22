@@ -103,14 +103,14 @@
         </p>
       </div>
       <div class="modal">
-        <div class="brown-button" tabindex="0">
-          <a class="text-button">Поиск гостиницы в Седоне</a>
+        <div class="brown-button modal-link" tabindex="0">
+          <a href="" class="text-button">Поиск гостиницы в Седоне</a>
         </div>
         <form action="https://echo.htmlacademy.ru" method="post" class="modal-form">
           <div class="reservation-date">
             <div class="arrival-date">
               <label for="arrival-date">Дата заезда: </label>
-              <input type="text" id="arrival-date" class="modal-item" placeholder="24 апреля 2017">
+              <input type="text" id="arrival-date" name="arrival-date" class="modal-item" placeholder="24 апреля 2017">
               <button type="button" class="date-button" aria-label="Календарь">
                 <svg width="21" height="23" viewBox="0 0 21 23" fill="#A9A9A9" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -124,7 +124,7 @@
             </div>
             <div class="arrival-date">
               <label for="date-of-depature">Дата выезда: </label>
-              <input type="text" id="date-of-depature" class="modal-item" placeholder="4 июля 2017">
+              <input type="text" id="date-of-depature" name="date-of-depature" class="modal-item" placeholder="4 июля 2017">
               <button type="button" class="date-button" aria-label="Календарь">
                 <svg width="21" height="23" viewBox="0 0 21 23" fill="#A9A9A9" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -141,13 +141,13 @@
             <div class="button-adults">
               <label for="adults">Взрослые:</label>
               <button type="button" class="modal-button modal-button--minus"></button>
-              <input type="text" id="adults" class="modal-item modal-item__adults" placeholder="2">
+              <input type="text" id="adults" name="adults" class="modal-item modal-item__adults" placeholder="2">
               <button type="button" class="modal-button modal-button--plus"></button>
             </div>
             <div class="button-children">
               <label for="children">Дети:</label>
               <button type="button" class="modal-button modal-button--minus"></button>
-              <input type="text" id="children" class="modal-item modal-item__children" placeholder="0">
+              <input type="text" id="children" name="children" class="modal-item modal-item__children" placeholder="0">
               <button type="button" class="modal-button  modal-button--plus"></button>
             </div>
           </div>
@@ -206,6 +206,17 @@
       </a>
     </div>
   </footer>
+  <script>
+  var link = document.querySelector(".modal-link");
+  var modalForm = document.querySelector(".modal-form");
+  
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modalForm.classList.toggle("modal-none");
+});
+
+
+</script>
 </body>
 
 </html>

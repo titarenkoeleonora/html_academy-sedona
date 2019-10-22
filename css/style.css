@@ -1167,8 +1167,11 @@ input[type=checkbox] {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 315px;
+    
     margin-top: -81px;
+    left: 50%;
+    transform: translateX(-50%);
+    
     /* width: 568px;
     display: flex;
     flex-direction: column;

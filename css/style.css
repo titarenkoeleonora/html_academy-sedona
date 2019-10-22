@@ -307,11 +307,24 @@ p.modal-subtitle__text {
 
 .modal-form {
     display: block;
+    position: absolute;
+    font-weight: 700;
+    margin: 0;
+    top: 86px;
+    padding: 55px;
+    /* width: 568px; */
+    box-sizing: content-box;
+    background-color: #ffffff;
+
+    /* display: block;
+    position: absolute;
     
     font-weight: 700;
     margin: 0;
-    width: 458px;
+    width: 568px;
     box-sizing: content-box;
+
+    background-color: #ffffff; */
 }
 
 .modal-none {
@@ -385,7 +398,6 @@ input::-webkit-input-placeholder {
     flex-wrap: nowrap;
     align-content: flex-end;
     align-items: center;
-    padding-top: 55px;
     min-height: 105px;
     width: 458px;
 }
@@ -474,7 +486,6 @@ input::-webkit-input-placeholder {
 .modal .blue-button {
     width: 458px;
     margin-top: 53px;
-    margin-bottom: 55px;
     font-size: 21px;
 
     min-height: 58px;
@@ -533,6 +544,7 @@ button[type="button"] {
     text-transform: uppercase;
     font-weight: 700;
     display: block;
+    outline: none;
 }
 
 .blue-button:hover,

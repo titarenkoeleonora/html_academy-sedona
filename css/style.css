@@ -296,37 +296,6 @@ p.modal-subtitle__text {
     line-height: 25px;
 }
 
-.modal-form {
-    display: none;
-    position: absolute;
-    font-weight: 700;
-    margin: 0;
-    top: 86px;
-    padding: 55px;
-    box-sizing: content-box;
-    background-color: #ffffff;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.modal-form-show {
-    display: block;
-    animation: bounce 0,6s;
-    -webkit-animation: bounce 0,6s;
-    /* animation-direction: alternate; */
-}
-
-/* .visually-hidden-modal {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    animation: bounce 0,6s;
-    -webkit-animation: bounce 0,6s;
-    animation-direction: alternate;
-} */
-
 /* Анимация */
 
 @keyframes bounce {
@@ -376,6 +345,39 @@ p.modal-subtitle__text {
     -o-transform: translateY(0);
 }
 }
+
+.modal-form {
+    display: none;
+    position: absolute;
+    font-weight: 700;
+    margin: 0;
+    top: 86px;
+    padding: 55px;
+    box-sizing: content-box;
+    background-color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal-form-show {
+    display: block;
+    animation: bounce 0,6s;
+    -webkit-animation: bounce 0,6s;
+    /* animation-direction: alternate; */
+}
+
+/* .visually-hidden-modal {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    animation: bounce 0,6s;
+    -webkit-animation: bounce 0,6s;
+    animation-direction: alternate;
+} */
+
+
 
 
 

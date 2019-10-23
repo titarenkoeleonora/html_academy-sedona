@@ -80,7 +80,6 @@ a.disabled {
 
 /* Картинка-приветствие */
 
-
 .first-screen {
     box-sizing: content-box;
     position: relative;
@@ -91,7 +90,6 @@ a.disabled {
     height: 509px;
     margin: 0 auto;
     overflow: hidden;
-    
 }
 
 .first-screen img {
@@ -110,7 +108,6 @@ a.disabled {
     bottom: -2px;
     display: block;
 }
-
 
 /* Списки с преимуществами и рекомендациями */
 
@@ -274,12 +271,6 @@ a.disabled {
 
 /* Форма поиска гостиниц */
 
-/* @keyframes bounce {
-    0 {
-
-    }
-} */
-
 .modal {
     background-color: #ffffff;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -306,32 +297,87 @@ p.modal-subtitle__text {
 }
 
 .modal-form {
-    display: block;
+    display: none;
     position: absolute;
     font-weight: 700;
     margin: 0;
     top: 86px;
     padding: 55px;
-    /* width: 568px; */
     box-sizing: content-box;
     background-color: #ffffff;
     left: 50%;
     transform: translateX(-50%);
+}
 
-    /* display: block;
+.modal-form-show {
+    display: block;
+    animation: bounce 0,6s;
+    -webkit-animation: bounce 0,6s;
+    /* animation-direction: alternate; */
+}
+
+.visually-hidden-modal {
     position: absolute;
-    
-    font-weight: 700;
-    margin: 0;
-    width: 568px;
-    box-sizing: content-box;
-
-    background-color: #ffffff; */
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    animation: bounce 0,6s;
+    -webkit-animation: bounce 0,6s;
+    animation-direction: alternate;
 }
 
-.modal-none {
-    display: none;
+/* Анимация */
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+        -webkit-transform: translateY(-2000px);
+        -moz-transform: translateY(-2000px);
+        -ms-transform: translateY(-2000px);
+        -o-transform: translateY(-2000px);
 }
+    70% {
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+}
+100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+        -webkit-transform: translateY(-2000px);
+        -moz-transform: translateY(-2000px);
+        -ms-transform: translateY(-2000px);
+        -o-transform: translateY(-2000px);
+}
+    70% {
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+}
+100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+}
+
+
 
 .modal-form p:first-child {
     margin-top: 55px;
@@ -358,8 +404,6 @@ p.modal-subtitle__text {
     border: 2px solid #e5e5e5;
     box-sizing: content-box;
 }
-
-
 
 .arrival-date input[type="text"] {
     position: relative;
@@ -536,7 +580,7 @@ button[type="button"] {
 .modal .brown-button {
     padding-top: 31px;
     padding-right: 139px;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
     padding-left: 139px;
 }
 
@@ -643,11 +687,6 @@ button[type="button"] {
 }
 
 .filter-form {
-    /* margin-top: 31px;
-    margin-right: 74px;
-    margin-bottom: 33px;
-    margin-left: 72px; */
-
     background-image: url("../img/filter_background.jpg");
     background-size: 1200px 800px;
     background-repeat: no-repeat;
@@ -724,7 +763,7 @@ input[type=checkbox] {
     background-image: url("../img/checkbox-off-disabled.svg");
 }
 
-.filter-input-checkbox:checked:disabled + label::before {
+.filter-input-checkbox:disabled:checked + label::before {
     background-image: url("../img/checkbox-on-disabled.svg");
 }
 
@@ -1173,14 +1212,6 @@ input[type=checkbox] {
     margin-top: -81px;
     left: 50%;
     transform: translateX(-50%);
-    
-    /* width: 568px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-left: 315px;
-    margin-top: -81px; */
 }
 
 .modal-title {
@@ -1191,12 +1222,6 @@ input[type=checkbox] {
     align-items: center;
     padding-top: 57px;
     min-height: 230px;
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-top: 57px;
-    min-height: 230px; */
 }
 
 .modal-buttons-number {
@@ -1229,11 +1254,7 @@ input[type=checkbox] {
 
 .map {
     position: absolute;
-    margin-top: 7px;
     z-index: 1;
-    /* position: relative;
-    margin-top: -395px;
-    z-index: 1; */
 }
 
 .footer {
@@ -1246,14 +1267,10 @@ input[type=checkbox] {
 }
 
 .footer-main-page {
-    margin-top: 478px;
+    margin-top: 472px;
     opacity: 0.9;
     position: relative;
     z-index: 1;
-    /* margin-top: -125px;
-    opacity: 0.9;
-    position: relative;
-    z-index: 1; */
 }
 
 .hashtag {
@@ -1331,6 +1348,8 @@ input[type=checkbox] {
 
     min-height: 93px;
 }
+
+
 
 
 

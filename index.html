@@ -104,11 +104,11 @@
       </div>
       <div class="modal">
         <a href="" class="text-button brown-button modal-link">Поиск гостиницы в Седоне</a>
-        <form action="https://echo.htmlacademy.ru" method="post" class="modal-form">
+        <form action="https://echo.htmlacademy.ru" method="post" class="modal-form modal-form-show">
           <div class="reservation-date">
             <div class="arrival-date">
               <label for="arrival-date">Дата заезда: </label>
-              <input type="text" id="arrival-date" name="arrival-date" class="modal-item" placeholder="24 апреля 2017">
+              <input type="text" id="arrival-date" name="arrival-date" class="modal-item" placeholder="24 апреля 2017" required>
               <button type="button" class="date-button" aria-label="Календарь">
                 <svg width="21" height="23" viewBox="0 0 21 23" fill="#A9A9A9" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -123,7 +123,7 @@
             <div class="arrival-date">
               <label for="date-of-depature">Дата выезда: </label>
               <input type="text" id="date-of-depature" name="date-of-depature" class="modal-item"
-                placeholder="4 июля 2017">
+                placeholder="4 июля 2017" required>
               <button type="button" class="date-button" aria-label="Календарь">
                 <svg width="21" height="23" viewBox="0 0 21 23" fill="#A9A9A9" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -140,7 +140,7 @@
             <div class="button-adults">
               <label for="adults">Взрослые:</label>
               <button type="button" class="modal-button modal-button--minus"></button>
-              <input type="text" id="adults" name="adults" class="modal-item modal-item__adults" placeholder="2">
+              <input type="text" id="adults" name="adults" class="modal-item modal-item__adults" placeholder="2" required>
               <button type="button" class="modal-button modal-button--plus"></button>
             </div>
             <div class="button-children">
@@ -159,6 +159,7 @@
       </div>
     </section>
     <div class="map">
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498144.6966137262!2d-112.07407383189287!3d34.89135278421064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1571811280733!5m2!1sru!2sru" width="1200" height="590" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
       <img src="img/map.jpg" alt="Карта Седоны" width="1200" height="590">
     </div>
   </main>
@@ -206,12 +207,15 @@
     </div>
   </footer>
   <script>
+
     var link = document.querySelector(".modal-link");
     var modalForm = document.querySelector(".modal-form");
+    var arrivalDate = modalForm.querySelector("[name=arrival-date]");
 
     link.addEventListener("click", function (evt) {
       evt.preventDefault();
-      modalForm.classList.toggle("modal-none");
+      modalForm.classList.toggle("modal-form-show");
+      arrivalDate.focus();
     });
 
   </script>

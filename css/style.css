@@ -316,7 +316,7 @@ p.modal-subtitle__text {
     /* animation-direction: alternate; */
 }
 
-.visually-hidden-modal {
+/* .visually-hidden-modal {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -325,7 +325,7 @@ p.modal-subtitle__text {
     animation: bounce 0,6s;
     -webkit-animation: bounce 0,6s;
     animation-direction: alternate;
-}
+} */
 
 /* Анимация */
 

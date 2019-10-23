@@ -206,19 +206,7 @@
       </a>
     </div>
   </footer>
-  <script>
-
-    var link = document.querySelector(".modal-link");
-    var modalForm = document.querySelector(".modal-form");
-    var arrivalDate = modalForm.querySelector("[name=arrival-date]");
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      modalForm.classList.toggle("modal-form-show");
-      arrivalDate.focus();
-    });
-
-  </script>
+  <script src="js/modal-form.js"></script>
 </body>
 
 </html>

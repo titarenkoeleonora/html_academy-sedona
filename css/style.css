@@ -299,87 +299,66 @@ p.modal-subtitle__text {
 /* Анимация */
 
 @keyframes bounce {
-    0% {
-        transform: translateY(-2000px);
-        -webkit-transform: translateY(-2000px);
-        -moz-transform: translateY(-2000px);
-        -ms-transform: translateY(-2000px);
-        -o-transform: translateY(-2000px);
+    from {
+        transform:translateY(-130px);
+        -webkit-transform:translateY(-130px);
+        -moz-transform:translateY(-130px);
+        -ms-transform:translateY(-130px);
+        -o-transform:translateY(-130px);
 }
-    70% {
-    transform: translateY(30px);
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
-}
-100% {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
+
+    to {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
 }
 }
 
 @-webkit-keyframes bounce {
-    0% {
-        transform: translateY(-2000px);
-        -webkit-transform: translateY(-2000px);
-        -moz-transform: translateY(-2000px);
-        -ms-transform: translateY(-2000px);
-        -o-transform: translateY(-2000px);
-}
-    70% {
-    transform: translateY(30px);
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
-}
-100% {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-}
+    from {
+        transform:translateY(-130px);
+        -webkit-transform:translateY(-130px);
+        -moz-transform:translateY(-130px);
+        -ms-transform:translateY(-130px);
+        -o-transform:translateY(-130px);
+    }
+    to {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
 }
 
 .modal-form {
     display: none;
     position: absolute;
     font-weight: 700;
-    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
     top: 86px;
     padding: 55px;
     box-sizing: content-box;
     background-color: #ffffff;
-    left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
 }
 
 .modal-form-show {
     display: block;
-    animation: bounce 0,6s;
-    -webkit-animation: bounce 0,6s;
-    /* animation-direction: alternate; */
+    z-index: -1;
+    
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: 0.5s;
 }
-
-/* .visually-hidden-modal {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    animation: bounce 0,6s;
-    -webkit-animation: bounce 0,6s;
-    animation-direction: alternate;
-} */
-
-
-
-
 
 .modal-form p:first-child {
     margin-top: 55px;
@@ -1224,6 +1203,7 @@ input[type=checkbox] {
     align-items: center;
     padding-top: 57px;
     min-height: 230px;
+    z-index: 1;
 }
 
 .modal-buttons-number {

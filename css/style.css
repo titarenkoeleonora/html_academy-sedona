@@ -337,17 +337,13 @@ p.modal-subtitle__text {
     display: none;
     position: absolute;
     font-weight: 700;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
+    text-align: center;
     
     top: 86px;
     padding: 55px;
     box-sizing: content-box;
     background-color: #ffffff;
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
 }
 
 .modal-form-show {
@@ -412,8 +408,28 @@ p.modal-subtitle__text {
     box-sizing: border-box;
 }
 
-input::-webkit-input-placeholder { 
+input[type="text"]::-webkit-input-placeholder {
     color: #000000;
+    opacity: 1;
+}
+
+input[type="text"]:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+input[type="text"]::-ms-input-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+input[type="text"]::-moz-input-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+input[type="text"]::-o-input-placeholder {
+    color: #000000;
+    opacity: 1;
 }
 
 .reservation-date {
@@ -560,7 +576,7 @@ button[type="button"] {
 
 .modal .brown-button {
     padding-top: 31px;
-    padding-right: 139px;
+    padding-right: 138px;
     padding-bottom: 30px;
     padding-left: 139px;
 }
@@ -1185,14 +1201,10 @@ input[type=checkbox] {
 .modal {
     position: relative;
     width: 568px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
 
-    margin-top: -81px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .modal-title {
@@ -1202,7 +1214,7 @@ input[type=checkbox] {
     flex-wrap: wrap;
     align-items: center;
     padding-top: 57px;
-    min-height: 230px;
+    min-height: 150px;
     z-index: 1;
 }
 

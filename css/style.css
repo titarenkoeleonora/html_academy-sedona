@@ -1201,7 +1201,6 @@ input[type=checkbox] {
 .modal {
     position: relative;
     width: 568px;
-
     display: block;
     margin: 0 auto;
     text-align: center;

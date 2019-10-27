@@ -15,19 +15,24 @@ try {
   isStorageSupport = false;
 }
 
+function doFocus() {
+  arrivalDate.focus();
+};
+
 link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    modalForm.classList.toggle("modal-form-show");
-    arrivalDate.focus();
-    if (storage) {
-        adults.value = storage;
-        children.value = storage;
-      }
+  evt.preventDefault();
+  modalForm.classList.toggle("modal-form-show");
+  setTimeout(doFocus, 1000);
+  // arrivalDate.focus();
+  if (storage) {
+    adults.value = storage;
+    children.value = storage;
+  }
 });
 
 modalForm.addEventListener("submit", function (evt) {
-    if (isStorageSupport) {
+  if (isStorageSupport) {
     localStorage.setItem("children", children.value);
     localStorage.setItem("adults", adults.value);
-    }
-  });
+  }
+});

@@ -22,7 +22,7 @@ function doFocus() {
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalForm.classList.toggle("modal-form-show");
-  setTimeout(doFocus, 1000);
+  setTimeout(doFocus, 1500);
   // arrivalDate.focus();
   if (storage) {
     adults.value = storage;

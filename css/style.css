@@ -340,7 +340,7 @@ p.modal-subtitle-text {
     -moz-transform: translateY(-420px);
     -ms-transform: translateY(-420px);
     -o-transform: translateY(-420px);
-}
+  }
 
   to {
     transform: translateY(0px);
@@ -358,7 +358,25 @@ p.modal-subtitle-text {
     -moz-transform: translateY(-420px);
     -ms-transform: translateY(-420px);
     -o-transform: translateY(-420px);
+  }
+
+  to {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
 }
+
+@keyframes bounce {
+  from {
+    transform: translateY(-420px);
+    -webkit-transform: translateY(-420px);
+    -moz-transform: translateY(-420px);
+    -ms-transform: translateY(-420px);
+    -o-transform: translateY(-420px);
+  }
 
   to {
     transform: translateY(0px);
@@ -821,6 +839,10 @@ button[type="button"] {
   left: 0;
 }
 
+.checkbox input[type="checkbox"]:focus+label::before {
+  outline: rgb(0, 255, 255) auto 1px;
+}
+
 .checkbox input[type="checkbox"]:checked+label::before {
   content: "";
   display: inline-block;
@@ -1000,6 +1022,7 @@ button[type="button"] {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  outline: none;
 }
 
 .btn-transparent:hover,
@@ -1077,6 +1100,10 @@ button[type="button"] {
 .arrows {
   margin-left: auto;
   margin-right: 73px;
+}
+
+.arrows a {
+  outline: none;
 }
 
 .arrows-up {

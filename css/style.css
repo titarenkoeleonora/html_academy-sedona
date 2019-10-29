@@ -75,8 +75,12 @@ a {
 
 a.disabled {
   pointer-events: none;
+  user-select: none;
   color: #766357;
+  display: inline-block;
 }
+
+
 
 /* Картинка-приветствие */
 
@@ -921,10 +925,10 @@ button[type="button"] {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
 
   font-size: 14px;
   line-height: 38px;
-  vertical-align: top;
 
   cursor: pointer;
 }
@@ -1047,7 +1051,6 @@ button[type="button"] {
 }
 
 .sorting-type {
-  width: 363px;
   display: flex;
   margin-top: 2px;
 
@@ -1094,7 +1097,7 @@ button[type="button"] {
 
 .sorting-type-item.active {
   color: #81b3d2;
-  border: none;
+  border-bottom: 1px dotted transparent;
 }
 
 .arrows {

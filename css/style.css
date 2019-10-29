@@ -335,12 +335,12 @@ p.modal-subtitle-text {
 
 @keyframes bounce {
   from {
-    transform: translateY(-130px);
-    -webkit-transform: translateY(-130px);
-    -moz-transform: translateY(-130px);
-    -ms-transform: translateY(-130px);
-    -o-transform: translateY(-130px);
-  }
+    transform: translateY(-420px);
+    -webkit-transform: translateY(-420px);
+    -moz-transform: translateY(-420px);
+    -ms-transform: translateY(-420px);
+    -o-transform: translateY(-420px);
+}
 
   to {
     transform: translateY(0px);
@@ -353,12 +353,12 @@ p.modal-subtitle-text {
 
 @-webkit-keyframes bounce {
   from {
-    transform: translateY(-130px);
-    -webkit-transform: translateY(-130px);
-    -moz-transform: translateY(-130px);
-    -ms-transform: translateY(-130px);
-    -o-transform: translateY(-130px);
-  }
+    transform: translateY(-420px);
+    -webkit-transform: translateY(-420px);
+    -moz-transform: translateY(-420px);
+    -ms-transform: translateY(-420px);
+    -o-transform: translateY(-420px);
+}
 
   to {
     transform: translateY(0px);
@@ -387,9 +387,9 @@ p.modal-subtitle-text {
   z-index: -1;
 
   animation-name: bounce;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   -webkit-animation-name: bounce;
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
 }
 
 .modal-form p:first-child {
@@ -783,12 +783,20 @@ button[type="button"] {
   padding: 0;
 }
 
+.housing label {
+  letter-spacing: 0.3px;
+}
+
+.infrastructure.filter-range-title {
+  letter-spacing: 0.2px;
+}
+
 .checkbox {
   margin-bottom: 21px;
 }
 
-.filter-input-checkbox {
-  display: none;
+.checkbox input[type="checkbox"] {
+  position: absolute;
 }
 
 .checkbox label {
@@ -801,17 +809,10 @@ button[type="button"] {
   line-height: 25px;
 }
 
-.housing label {
-  letter-spacing: 0.3px;
-}
-
-.infrastructure.filter-range-title {
-  letter-spacing: 0.2px;
-}
-
-.filter-input-checkbox+label::before {
+.checkbox input[type="checkbox"]+label::before {
   content: "";
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
@@ -820,9 +821,10 @@ button[type="button"] {
   left: 0;
 }
 
-.filter-input-checkbox:checked+label::before {
+.checkbox input[type="checkbox"]:checked+label::before {
   content: "";
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   width: 26px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
@@ -831,11 +833,11 @@ button[type="button"] {
   left: 0;
 }
 
-.filter-input-checkbox:disabled+label::before {
+.checkbox input[type="checkbox"]:disabled+label::before {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
-.filter-input-checkbox:disabled:checked+label::before {
+.checkbox input[type="checkbox"]:disabled:checked+label::before {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
@@ -1290,7 +1292,8 @@ button[type="button"] {
   align-items: center;
   padding-top: 57px;
   min-height: 150px;
-  z-index: 1;
+  z-index: 5;
+  background-color: white;
 }
 
 

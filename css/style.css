@@ -843,10 +843,6 @@ button[type="button"] {
   left: 0;
 }
 
-.checkbox input[type="checkbox"]:focus+label::before {
-  outline: rgb(0, 255, 255) auto 1px;
-}
-
 .checkbox input[type="checkbox"]:checked+label::before {
   content: "";
   display: inline-block;
@@ -866,6 +862,11 @@ button[type="button"] {
 .checkbox input[type="checkbox"]:disabled:checked+label::before {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
+
+.checkbox input[type="checkbox"]:focus+label::before {
+  outline: rgb(0, 255, 255) auto 1px;
+}
+
 
 .infrastructure {
   margin-left: 72px;

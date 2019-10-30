@@ -80,7 +80,10 @@ a.disabled {
   display: inline-block;
 }
 
-
+a.disabled:hover,
+a.disabled:focus {
+  color: #766357;
+}
 
 /* Картинка-приветствие */
 
@@ -856,7 +859,7 @@ button[type="button"] {
 }
 
 .checkbox input[type="checkbox"]:focus+label::before {
-  outline: rgb(0, 255, 255) auto 1px;
+  outline: 1px solid blue;
 }
 
 

@@ -78,6 +78,7 @@ a.disabled {
   user-select: none;
   color: #766357;
   display: inline-block;
+  vertical-align: middle;
 }
 
 a.disabled:hover,
